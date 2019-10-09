@@ -7,11 +7,39 @@ height:100%;
 
 
 header {
-
-background-size: contain;
+display: grid;
+background-size: cover;
 background: url('../images/glesbygden1.jpg');
 background-repeat: no-repeat;
 height:550px;
 width:100%;
+background-position: right;
+grid-template-columns: 100%;
+grid-template-rows:20% 30% 30% 20%;
+grid-template-areas:
+"."
+"h1_header"
+"h3_header"
+".";
 
+}
+
+.h1_header {
+  position: relative;
+      top: 54%;
+      text-align: center;
+      color: white;
+      font-size: 74px;
+      grid-area: h1_header;
+      margin: 0;
+      padding: 0;
+}
+
+.h3_header {
+  text-align: center;
+  color:white;
+grid-area:h3_header;
+margin:0;
+padding:0;
+text-transform: uppercase;
 }
