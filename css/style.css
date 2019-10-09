@@ -14,7 +14,7 @@ background:    linear-gradient(
     ),
     url('../images/glesbygden1.jpg');
 background-repeat: no-repeat;
-height:550px;
+height:665px;
 width:100%;
 background-position: right;
 grid-template-columns: 100%;
@@ -114,7 +114,7 @@ height:75px;
 
 
 main {
-
+padding-bottom:120px;
 min-height:400px;
 width:100%;
 }
@@ -190,6 +190,18 @@ width: 480px;
 height: 300px;
 }
 
+.active {
+color:white;
+background-color:black;
+
+}
+
+.active a {
+color:white;
+
+
+}
+
 
 
 
@@ -203,7 +215,7 @@ margin:0;
 padding:0;
 
 background-color:#626362;
-height:120px;
+height:150px;
 
 }
 
@@ -229,5 +241,21 @@ footer section {
 
 margin:0;
 padding:0;
+
+}
+
+
+form {
+
+border:1px solid grey;
+
+width:400px;
+
+}
+
+form input {
+
+
+display: block;
 
 }
