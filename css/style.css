@@ -32,7 +32,7 @@ grid-template-areas:
       top: 54%;
       text-align: center;
       color: white;
-      font-size: 74px;
+      font-size: 96px;
       grid-area: h1_header;
       margin: 0;
       padding: 0;
@@ -214,7 +214,7 @@ padding-top:120px;
 margin:0;
 padding:0;
 
-background-color:#626362;
+background-color:#404040;
 height:150px;
 
 }
