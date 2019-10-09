@@ -9,7 +9,10 @@ height:100%;
 header {
 display: grid;
 background-size: cover;
-background: url('../images/glesbygden1.jpg');
+background:    linear-gradient(
+  rgba(0, 255, 55, 0.45), rgba(86, 255, 0, 0.45)
+    ),
+    url('../images/glesbygden1.jpg');
 background-repeat: no-repeat;
 height:550px;
 width:100%;
@@ -46,9 +49,9 @@ text-transform: uppercase;
 
 nav ul li {
   margin-right: 10px;
-
+color:black;
 display: inline;
-background-color:darkgreen;
+background-color:white;
 padding:10px;
 
 }
@@ -67,7 +70,7 @@ background-color:grey;
 nav ul li a {
   font-family: arial;
   font-size:15px;
-color:white;
+color:black;
 text-transform: uppercase;
 text-decoration: none;
 
@@ -88,7 +91,7 @@ grid-template-columns:30% 10% 35% 25%;
 grid-template-rows: 100%;
 grid-template-areas: ". logo pointerNav .";
 height:120px;
-background-color:green;
+background-color:#626362;
 
 }
 
@@ -100,4 +103,70 @@ float:right;
   padding:0px;
 width:150px;
 height:75px;
+}
+
+main {
+
+min-height:400px;
+width:100%;
+}
+
+
+main .maincontent {
+
+width:50%;
+margin-left:auto;
+margin-right:auto;
+
+}
+
+.maincontent h1 {
+
+font-size:82px;
+color:black;
+top:50%;
+position: relative;
+text-align: center;
+
+
+}
+
+
+
+
+
+footer {
+
+padding-top:120px;
+margin:0;
+padding:0;
+
+background-color:#626362;
+height:120px;
+
+}
+
+footer h1 {
+margin:0;
+padding:0;
+font-size:80px;
+color:white;
+text-align: center;
+
+}
+
+
+footer aside {
+
+margin:0;
+padding:0;
+
+
+}
+
+footer section {
+
+margin:0;
+padding:0;
+
 }
