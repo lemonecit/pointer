@@ -63,19 +63,19 @@ text-transform: uppercase;
 .img_stop {
 
   grid-area: img_stop;
-  position: relative;
-  left: 274px;
-  width: 100px;
-  top: 177px;
-  /* z-index: 55; */
-  height: 100px;}
+      position: relative;
+      left: 368px;
+      width: 100px;
+      top: 177px;
+      /* z-index: 55; */
+      height: 100px;}
 
 .img_header {
   grid-area: img_header;
   width: 205px;
   position: relative;
   top: -98px;
-  left: 270px;
+  left: 380px;
 
 }
 
