@@ -6,25 +6,36 @@ height:100%;
 }
 
 
-header {
-display: grid;
-background-size: cover;
-background:    linear-gradient(
-  rgba(0, 255, 55, 0.45), rgba(86, 255, 0, 0.45)
-    ),
-    url('../images/glesbygden1.jpg');
-background-repeat: no-repeat;
-height:665px;
-width:100%;
-background-position: right;
-grid-template-columns: 100%;
-grid-template-rows:20% 20% 20% 20% 20%;
-grid-template-areas:
-"img_stop"
-"h1_header"
-"h3_header"
-"img_header";
+.hSection {
 
+  width: 40%;
+      display: grid;
+      height: 100%;
+      grid-template-columns: 100%;
+      grid-template-rows: 20% 20% 20% 20% 20%;
+      grid-template-areas:
+          "img_stop"
+          "h1_header"
+          "h3_header"
+          "img_header";
+      margin-left: auto;
+      margin-right: auto;
+      background-color:#2d882d99;
+      opacity: 0.9;
+
+
+}
+
+
+header {
+
+
+  height:665px;
+  width:100%;
+  background-size: cover;
+  background:
+      url('../images/glesbygden1.jpg');
+  background-repeat: no-repeat;
 }
 
 .h1_header {
@@ -51,20 +62,20 @@ text-transform: uppercase;
 
 .img_stop {
 
-grid-area:img_stop;
+  grid-area: img_stop;
   position: relative;
-    left: 845px;
-    width: 100px;
-    top: 177px;
-    /* z-index: 55; */
-    height: 100px;}
+  left: 274px;
+  width: 100px;
+  top: 177px;
+  /* z-index: 55; */
+  height: 100px;}
 
 .img_header {
   grid-area: img_header;
-      width: 205px;
-      position: relative;
-      top: -98px;
-      left: 837px;
+  width: 205px;
+  position: relative;
+  top: -98px;
+  left: 270px;
 
 }
 
