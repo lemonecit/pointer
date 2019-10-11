@@ -16,12 +16,12 @@
   </section>
 
 </header>
-<nav>
+<nav id="navbar">
 <a class='logo' href="index.html"><img  src="https://i.dlpng.com/static/png/6748645_preview.png" alt=""></a>
 <ul class="pointerNav">
-  <li><a href="problem.html">Problemet</a></li>
-    <li><a href="work.html">Hur fungerar det?</a></li>
-      <li><a href="contact.html">Kontakta oss</a></li>
+  <li><a href="#problem">Problemet</a></li>
+    <li><a href="#works">Hur fungerar det?</a></li>
+      <li><a href="#contact">Kontakta oss</a></li>
         <li><a href="faq.html">Vanliga frågor</a></li>
 </ul>
 </nav>
@@ -40,7 +40,7 @@ Fusce scelerisque nec augue sed porta. Phasellus pharetra quam metus, non volutp
 Nulla lectus orci, sodales non pulvinar nec, mollis non magna. Cras posuere consectetur nunc sit amet euismod. Nunc sagittis id metus non fermentum. Aliquam diam diam, placerat quis malesuada nec, posuere et purus. Curabitur mattis eros a sem venenatis tempus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in dui et lacus eleifend convallis sagittis eu orci. Nunc ac porta nibh.</p>
     </article>
 
-<video class="mainVideo" autoplay controls>
+<video class="mainVideo"  controls autoplay>
   <source src="images/Pointer.mp4" type="video/mp4">
     Your browser does not support the video tag.
 </video>
@@ -59,7 +59,7 @@ Nulla lectus orci, sodales non pulvinar nec, mollis non magna. Cras posuere cons
   <section class="mainArticle1">
 
     <aside class="contentAsideLeft">
-<h1>Problemet</h1>
+<h1 id="problem">Problemet</h1>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut convallis ultrices augue sit amet bibendum. Integer gravida est id elit hendrerit, id dapibus nisl venenatis. Nam ac nunc vel arcu mollis auctor. Sed eu blandit nisl. Vivamus eu pulvinar diam. Integer tempus molestie nibh, in lobortis ligula fermentum sit amet.</p>
     </aside>
 
@@ -74,7 +74,7 @@ Nulla lectus orci, sodales non pulvinar nec, mollis non magna. Cras posuere cons
 
 
     <aside class="contentAsideLeft1">
-<h1>Problemet</h1>
+<h1 id="works">Problemet</h1>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut convallis ultrices augue sit amet bibendum. Integer gravida est id elit hendrerit, id dapibus nisl venenatis. Nam ac nunc vel arcu mollis auctor. Sed eu blandit nisl. Vivamus eu pulvinar diam. Integer tempus molestie nibh, in lobortis ligula fermentum sit amet.</p>
     </aside>
 
@@ -112,6 +112,23 @@ Nulla lectus orci, sodales non pulvinar nec, mollis non magna. Cras posuere cons
 </section>
 
 </footer>
+
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
 
   </body>
 </html>

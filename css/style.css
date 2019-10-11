@@ -360,3 +360,15 @@ form input {
 display: block;
 
 }
+
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 55555;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
