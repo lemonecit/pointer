@@ -587,11 +587,14 @@ grid-area:footerAside2;
 
 }
 
+/* footerAside2 */
+
 .footerAside2 a {
 
   font-size: 17px;
   text-decoration: none;
   color: white;
+
 
 }
 
