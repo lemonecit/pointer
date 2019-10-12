@@ -614,17 +614,214 @@ grid-area:profile4;
 }
 
 .sectionFooter {
-  height:215px;
-align-items: center;
+  top: 25%;
+  height: 100px;
+  /* align-items: center; */
   margin-left: auto;
+  display: grid;
+  width: 50%;
+  grid-template-columns: 30% 30% 10% 30%;
+  grid-template-rows: 100%;
+  grid-template-areas: "footerFirstColumn footerSecondColumn . footerThirdColumn";
+  margin-right: auto;
+  position: relative;
+}
+
+.footerFirstColumn {
+      grid-area: footerFirstColumn;
       display: grid;
-      width: 50%;
-      grid-template-columns: 33.33% 33.33% 33.33%;
-      grid-template-rows: 100%;
-      grid-template-areas: "footerAside1 footerAside2 footerAside3";
-      margin-right: auto;
+      grid-template-columns: 17% 83%;
+      grid-template-rows: 20% 20% 20% 20% 20%;
+      grid-template-areas:
+      "sectionLeftSpan1 sectionLeftSpan1"
+      "sectionLeftSpan2 sectionLeftSpan2"
+      "sectionLeftSpan3 sectionLeftSpan3"
+      "sectionLeftSpan4 sectionLeftSpan5"
+      "sectionLeftSpan6 sectionLeftSpan7";
 
 }
+
+.sectionLeftSpan1 {
+  font-weight:bold;
+margin:0;
+padding:0;
+grid-area:sectionLeftSpan1;
+
+}
+
+.sectionLeftSpan2 {
+  margin:0;
+  padding:0;
+grid-area:sectionLeftSpan2;
+
+}
+
+.sectionLeftSpan3 {
+  margin:0;
+  padding:0;
+grid-area:sectionLeftSpan3;
+
+}
+
+
+.sectionLeftSpan4 {
+  margin:0;
+  padding:0;
+grid-area:sectionLeftSpan4;
+font-weight:bold;
+
+}
+
+.sectionLeftSpan5 {
+  margin:0;
+  padding:0;
+grid-area:sectionLeftSpan5;
+
+}
+
+
+.sectionLeftSpan6 {
+  margin:0;
+  padding:0;
+  font-weight:bold;
+grid-area:sectionLeftSpan6;
+
+}
+
+.sectionLeftSpan7 {
+  margin:0;
+  padding:0;
+grid-area:sectionLeftSpan7;
+
+}
+
+
+.footerSecondColumn {
+
+grid-area:footerSecondColumn;
+display: grid;
+grid-template-columns: 100%;
+grid-template-rows: 25% 25% 25% 25%;
+grid-template-areas:
+"sectionMiddleSpan1"
+"."
+"sectionMiddleSpan2"
+"sectionMiddleUl";
+
+
+
+}
+
+.sectionMiddleSpan1 {
+font-weight:bold;
+text-align: center;
+  grid-area:sectionMiddleSpan1;
+}
+
+.sectionMiddleSpan1 a {
+
+text-decoration: none;
+color:white;
+
+}
+
+.sectionMiddleSpan2 {
+text-align: center;
+  grid-area:sectionMiddleSpan2;
+}
+
+.sectionMiddleUl {
+  text-align: center;
+  align-self: center;
+
+  margin: 0;
+  padding: 0;
+  grid-area: sectionMiddleUl;
+}
+
+.sectionMiddleUl i {
+
+color:white;
+
+}
+
+
+
+.sectionMiddleUl li {
+
+display: inline;
+
+}
+
+
+.footerThirdColumn {
+        grid-row-gap: 10%;
+        grid-area: footerThirdColumn;
+        display: grid;
+        grid-template-columns: 18% 82%;
+        grid-template-rows: 25% 25% 25% 25%;
+        grid-template-areas:
+        "sectionRightSpan1 sectionRightSpan1"
+        "sectionRightSpan2 sectionRightInput1"
+        "sectionRightSpan3 sectionRightInput2"
+        ". sectionRightBtn";
+}
+
+
+.sectionRightSpan1 {
+  text-align: center;
+text-transform: uppercase;
+
+grid-area:sectionRightSpan1;
+font-weight:bold;
+}
+
+
+.sectionRightSpan2 {
+font-weight:bold;
+grid-area:sectionRightSpan2;
+
+}
+
+.sectionRightInput1 {
+
+grid-area:sectionRightInput1;
+
+}
+
+
+.sectionRightSpan3 {
+grid-area:sectionRightSpan3;
+font-weight:bold;
+}
+
+.sectionRightInput2 {
+
+grid-ara:sectionRightInput2;
+
+}
+
+.sectionRightBtn {
+
+grid-area:sectionRightBtn;
+
+}
+
+
+.sectionRightBtn  {
+
+  left: 120px;
+  text-align: center;
+  background-color: #3F7035;
+  color: white;
+  border: 1px solid beige;
+  width: 115px;
+  position: relative;
+  font-weight: bold;
+
+}
+
+
 
 .sectionFooter span,label,legend {
 color:white;
@@ -634,58 +831,14 @@ margin:0;
 }
 
 
-.footerAside1 {
-
-grid-area:footerAside1;
-
-}
-
-.footerAside1 a {
-
-  font-size: 17px;
-  text-decoration: none;
-  color: white;
-
-}
-
-
-.footerAside2 {
-text-align: center;
-grid-area:footerAside2;
-
-}
-
-/* footerAside2 */
-
-.footerAside2 a {
-
-  font-size: 17px;
-  text-decoration: none;
-  color: white;
-
-
-}
 
 
 
-.footerAside3 {
-  grid-area: footerAside3;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
 
-}
-
-.footerAside3 span {
-
-  text-align: center;
-      text-transform: uppercase;
-
-}
 
 
 footer {
-
+height: 215px;
 padding-top:120px;
 margin:0;
 padding:0;
@@ -695,44 +848,13 @@ background-color:#404040;
 
 }
 
-footer h1 {
-margin:0;
-padding:0;
-font-size:80px;
-color:white;
-text-align: center;
 
-}
 
-fieldset {
-border:0;
-  width: 60%;
-      text-align: end;
 
-}
 
-.footerAside3 button {
-padding-top:10px;
-background-color: #3F7035;
-color:white;
-border:0;
-width:100px;
-padding:10px;
 
-}
 
-.footerAside3 input {
-  width: 220px;
-  margin-bottom: 8px;
-  padding: 5px;
 
-}
-
-.footerAside3 label {
-
-padding-right:5px;
-
-}
 
 
 /* ################################ */
