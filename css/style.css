@@ -9,7 +9,16 @@ font-family: helvetica;
 }
 
 
-h1,h2,h3,span,p,label {
+h1,h2,h3 {
+  text-align: center;
+  line-height: 1.5em;
+  margin: 0px;
+  padding: 0px;
+color: #3f7035;
+}
+
+
+span,p,label {
   line-height: 1.5em;
   margin: 0px;
   padding: 0px;
@@ -19,39 +28,47 @@ h1,h2,h3,span,p,label {
 
   .hSection {
     align-items: center;
-    width: 30%;
-    display: grid;
-    height: 100%;
-    grid-template-columns: 100%;
-    grid-template-rows: 25% 25% 25% 25%;
-    grid-template-areas:
-        "img_stop"
-        "h1_header"
-        "h3_header"
-        "img_header";
-    margin-left: auto;
-    margin-right: auto;
+        width: 30%;
+        display: grid;
+        height: 100%;
+        grid-template-columns: 100%;
+        grid-template-rows: 39% 11% 11% 39%;
+        grid-template-areas:
+            "."
+            "h1_header"
+            "h3_header"
+            ".";
+        margin-left: auto;
+        margin-right: auto;
 
 }
 
 
+
+
 .bg {
+
+
   background-attachment: fixed;
-  background-image: url(../images/glesbygden3.jpg);
+  background-image: url(../images/StartHead1_blur.png);
   height: 450px;
   width: 100%;
   background-position: bottom 190px right;
   background-repeat: no-repeat;
 
+
+
 }
+
+
 
 
 .bg1 {
   background-attachment: fixed;
-  background-image: url(../images/hallplats.jpg);
+  background-image: url(../images/div-pic-2.jpg);
   height: 450px;
   width: 100%;
-  background-position: bottom right;
+  background-position: bottom -270px right;
   background-repeat: no-repeat;
 
 }
@@ -59,17 +76,17 @@ h1,h2,h3,span,p,label {
 
 .bg2 {
   background-attachment: fixed;
-  background-image: url(../images/frusetSkog.jpg);
+  background-image: url(../images/div-pic-3.jpg);
   height: 450px;
   width: 100%;
-  background-position: bottom right;
+  background-position: bottom -270px right;
   background-repeat: no-repeat;
 
 }
 
 .h1_header {
-  letter-spacing: 17px;
-      background-color: #3f7035b0;
+    text-shadow: 2px 2px black;
+
       display: inline-block;
       text-align: center;
       color: white;
@@ -80,8 +97,7 @@ h1,h2,h3,span,p,label {
 }
 
 .h3_header {
-
-      background-color: #3f7035b0;
+      text-shadow: 2px 2px black;
       text-align: center;
       color:white;
       grid-area:h3_header;
@@ -91,54 +107,39 @@ h1,h2,h3,span,p,label {
 }
 
 
-/* .img_stop {
-
-  grid-area: img_stop;
-      position: relative;
-      left: 368px;
-      width: 100px;
-      top: 177px;
-      z-index: 55;
-      height: 100px;} */
-
-/* .img_header {
-  grid-area: img_header;
-  width: 205px;
-  position: relative;
-  top: -98px;
-  left: 380px;
-
-} */
 
 
 nav ul li {
-  margin-right: 10px;
-color:black;
+
+
 display: inline;
-background-color:white;
-padding:10px;
 
-}
-
- a:hover {
-
-
-
-background-color:grey;
 
 
 }
-
-
 
 nav ul li a {
-  font-family: arial;
-  font-size:15px;
-color:black;
-text-transform: uppercase;
-text-decoration: none;
+
+      font-weight: bold;
+      font-size: 20px;
+      color: white;
+      text-transform: capitalize;
+      text-decoration: none;
+      float: left;
+      padding: 10px;
+      width: auto;
+      text-align: center;
 
 }
+
+li a:hover {
+
+    background-color:white;
+    color:black;
+    font-weight: 500;
+}
+
+
 
 nav .pointerNav {
   align-self: center;
@@ -160,7 +161,7 @@ nav {
 
 .logo {
   align-self: center;
-float:right;
+  float:right;
   grid-area:logo;
 
 }
@@ -176,7 +177,8 @@ float:right;
 }
 
 
-main {
+
+.mainIndex {
 display: grid;
 grid-template-columns: 100%;
 grid-template-rows: auto auto auto;
@@ -319,25 +321,32 @@ text-align: center;
 
 
 .mainArticle1 {
+          padding-bottom: 85px;
+          padding-top: 85px;
+          display: grid;
+          width: 50%;
+          margin-left: auto;
+          margin-right: auto;
+          grid-column-gap: 5%;
+          grid-row-gap: 25px;
+          grid-template-columns: 45% 45%;
+          grid-template-rows: auto;
+          grid-template-areas:
 
-
-  grid-row-gap: 25px;
-      padding-top: 85px;
-      grid-column-gap: 5%;
-      display: grid;
-      width: 50%;
-      margin-left: auto;
-      margin-right: auto;
-      grid-template-columns: 45% 45%;
-      grid-template-rows: auto;
-      grid-template-areas:
+          "section2_h2 section2_h2"
           "contentAsideLeft contentAsideRight"
           "contentAsideRight1 contentAsideLeft1"
           "contentAsideLeft2 contentAsideRight2"
-
-          ;
-      padding-bottom: 85px;
+          "contentAsideRight3 contentAsideLeft3 "
+          "contentAsideLeft4 contentAsideRight4";
 }
+
+.section2_h2 {
+text-align: center;
+grid-area:section2_h2;
+
+}
+
 /* contentAsideLeft */
 .contentAsideLeft {
 
@@ -375,6 +384,33 @@ grid-area:contentAsideLeft2;
 }
 
 
+.contentAsideLeft3 {
+
+grid-area:contentAsideLeft3;
+
+}
+
+.contentAsideRight3 {
+
+  grid-area:contentAsideRight3;
+}
+
+
+.contentAsideLeft4 {
+
+grid-area:contentAsideLeft4;
+
+}
+
+.contentAsideRight4 {
+
+  grid-area:contentAsideRight4;
+}
+
+
+
+
+
 
 .contentAsideRight img {
 
@@ -391,6 +427,17 @@ height: 300px;
   width: 428px;
   height: 300px;
 }
+
+.contentAsideRight3 img {
+  width: 428px;
+  height: 300px;
+}
+
+.contentAsideRight4 img {
+  width: 428px;
+  height: 300px;
+}
+
 
 .active {
 color:white;
@@ -579,7 +626,7 @@ align-items: center;
 
 }
 
-.sectionFooter h6,span,label,legend {
+.sectionFooter span,label,legend {
 color:white;
 font-size:15px;
 padding:0;
@@ -629,7 +676,7 @@ grid-area:footerAside2;
 
 }
 
-.footerAside3 h6 {
+.footerAside3 span {
 
   text-align: center;
       text-transform: uppercase;
@@ -684,5 +731,101 @@ padding:10px;
 .footerAside3 label {
 
 padding-right:5px;
+
+}
+
+
+/* ################################ */
+/* css style for vision and faq pages */
+
+.mainVision {
+    min-height: 600px;
+  padding-bottom: 80px;
+  width: 100%;
+  padding-top: 80px;
+
+
+}
+
+
+.headSection_Vision {
+
+  padding-top: 80px;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 80px;
+
+
+}
+
+
+.headSection_Vision h3 {
+
+text-align: left;
+
+}
+
+
+.vision_row1 {
+display: grid;
+
+grid-template-columns: 33.33% 33.33% 33.33%;
+grid-template-rows: 10% 60% 30%;
+grid-template-areas:
+
+"childToVisionH3 . ."
+"childToVisionText childToVisionText childToVisionText "
+". childToVisionImg .";
+
+
+}
+
+
+.childToVisionH3 {
+
+grid-area:childToVisionH3;
+
+}
+
+.childToVisionText {
+
+grid-area: childToVisionText;
+
+}
+
+.childToVisionImg {
+
+      grid-area: childToVisionImg;
+      border-radius: 50%;
+      width: 150px;
+      margin-left: auto;
+      margin-right: auto
+}
+
+
+/* ################################### */
+/* Accordion - JQuery */
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+
+#accordion h3 {
+
+font-size:24px;
 
 }
