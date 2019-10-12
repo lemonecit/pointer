@@ -631,11 +631,12 @@ grid-area:profile4;
       grid-area: footerFirstColumn;
       display: grid;
       grid-template-columns: 17% 83%;
-      grid-template-rows: 20% 20% 20% 20% 20%;
+      grid-template-rows: 20% 20% 20% 12% auto auto;
       grid-template-areas:
       "sectionLeftSpan1 sectionLeftSpan1"
       "sectionLeftSpan2 sectionLeftSpan2"
       "sectionLeftSpan3 sectionLeftSpan3"
+      ". ."
       "sectionLeftSpan4 sectionLeftSpan5"
       "sectionLeftSpan6 sectionLeftSpan7";
 
@@ -660,6 +661,7 @@ grid-area:sectionLeftSpan2;
   margin:0;
   padding:0;
 grid-area:sectionLeftSpan3;
+padding-bottom:10px;
 
 }
 
