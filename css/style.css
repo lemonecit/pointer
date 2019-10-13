@@ -739,8 +739,9 @@ background-color:#404040;
 }
 
 .mainVision h2{
-text-align: center;
-
+/* text-align: center; */
+    font-size: 36px;
+    padding-bottom: 80px;
 }
 
 
@@ -767,12 +768,12 @@ text-align: left;
 display: grid;
 
 grid-template-columns: 33.33% 33.33% 33.33%;
-grid-template-rows: 10% 60% 30%;
+grid-template-rows: 10% auto;
 grid-template-areas:
 
 "childToVisionH3 . ."
-"childToVisionText childToVisionText childToVisionText "
-". childToVisionImg .";
+"childToVisionText childToVisionText childToVisionImg "
+
 
 
 }
