@@ -188,6 +188,7 @@ nav {
 
 
 
+
 .mainIndex {
     display: grid;
     grid-template-columns: 100%;
@@ -232,6 +233,7 @@ main .maincontent {
   padding-bottom: 80px;
 
 }
+
 
 
 
@@ -904,6 +906,17 @@ grid-area: childToVisionText;
   }
 
 
+  .bg_avdelare {
+    background-attachment: fixed;
+    background-image: url(../images/div_pic_1.jpg);
+    height: 450px;
+    width: 100%;
+    background-position: bottom 190px right;
+    background-repeat: no-repeat;
+  }
+
+
+
   .bg {
     background-attachment: fixed;
     background-image: url(../images/StartHead1_blur.png);
@@ -935,6 +948,9 @@ grid-area: childToVisionText;
     background-repeat: no-repeat;
 
   }
+
+
+
 
   .h1_header {
       text-shadow: 2px 2px black;
@@ -1025,26 +1041,26 @@ grid-area: childToVisionText;
 
 
   .mainIndex {
-      display: grid;
-      grid-template-columns: 100%;
-      grid-template-rows: auto auto auto;
-      grid-template-areas:
-      "maincontent"
-      "mainArticle1"
-      "sectionKontakt";
-      width:100%;
+    display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas:
+            "HeaderContent"
+            "maincontent"
+            "mainArticle1"
+            "sectionKontakt";
+        width: 100%;
   }
 
 
   main .maincontent {
-        overflow: hidden;
+    overflow: hidden;
         height: 100%;
         grid-row-gap: 5%;
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: auto auto auto;
+        grid-template-rows: auto auto;
         grid-template-areas:
-            "HeaderContent"
             "HeaderBackground"
             "HeaderVideo";
         padding-top: 0px;
