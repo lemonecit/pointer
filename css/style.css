@@ -1272,9 +1272,10 @@ grid-area: childToVisionText;
     text-align: center;
     display: grid;
     grid-area: kontaktProfile;
-    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-columns: 20% 20% 20% 20%;
     grid-template-rows: 100%;
     grid-template-areas: " profile1 profile2 profile3 profile4";
+    grid-column-gap: 10%;
   }
 
   .kontaktProfile label {
