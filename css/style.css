@@ -381,26 +381,31 @@ main .maincontent {
 .contentAsideRight img {
   width: 100%;
   height: 100%;
+   background-size: contain;
 }
 
 .contentAsideRight1 img {
   width: 100%;
   height: 100%;
+   background-size: contain;
 }
 
 .contentAsideRight2 img {
   width: 100%;
   height: 100%;
+   background-size: contain;
 }
 
 .contentAsideRight3 img {
   width: 100%;
   height: 100%;
+   background-size: contain;
 }
 
 .contentAsideRight4 img {
   width: 100%;
   height: 100%;
+   background-size: contain;
 }
 
 .active {
@@ -759,7 +764,7 @@ background-color:#404040;
 }
 
 .mainVision h2{
-/* text-align: center; */
+  text-align: center;
     font-size: 36px;
     padding-bottom: 80px;
 }
@@ -788,7 +793,7 @@ text-align: left;
 display: grid;
 
 grid-template-columns: 33.33% 33.33% 33.33%;
-grid-template-rows: 10% auto;
+grid-template-rows: 15% auto;
 grid-template-areas:
 
 "childToVisionH3 . ."
@@ -1223,27 +1228,31 @@ grid-area: childToVisionText;
 
   .contentAsideRight img {
     width: 100%;
-  height: 80%;
+  height: 100%;
   }
 
   .contentAsideRight1 img {
     width: 100%;
-  height: 80%;
+  height: 100%;
+   background-size: contain;
   }
 
   .contentAsideRight2 img {
     width: 100%;
-    height: 45%;
+    height: 50%;
+     background-size: contain;
   }
 
   .contentAsideRight3 img {
     width: 100%;
     height: 100%;
+     background-size: contain;
   }
 
   .contentAsideRight4 img {
     width: 100%;
-    height: 45%;
+    height: 50%;
+     background-size: contain;
   }
 
   .active {
