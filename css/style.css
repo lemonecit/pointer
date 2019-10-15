@@ -128,6 +128,17 @@ font-size:20px;
 
 }
 
+.bg3 {
+  background-attachment: fixed;
+  background-image: url(../images/div-pic-4.jpg);
+  height: 450px;
+  width: 100%;
+  background-position: bottom -270px right;
+  background-repeat: no-repeat;
+
+}
+
+
 .h1_header {
     text-shadow: 2px 2px black;
       letter-spacing: -3px;
@@ -819,7 +830,7 @@ padding-top:40px;
 
 #headeSection_bottom {
 
-padding-bottom:40px;
+padding-bottom:100px;
 
 }
 
@@ -993,6 +1004,16 @@ grid-area: childToVisionText;
   .bg2 {
     background-attachment: fixed;
     background-image: url(../images/div-pic-3.jpg);
+    height: 450px;
+    width: 100%;
+    background-position: bottom -270px right;
+    background-repeat: no-repeat;
+
+  }
+
+  .bg3 {
+    background-attachment: fixed;
+    background-image: url(../images/div-pic-4.jpg);
     height: 450px;
     width: 100%;
     background-position: bottom -270px right;
@@ -1694,7 +1715,7 @@ grid-area: childToVisionText;
     width: 50%;
     margin-left: auto;
     margin-right: auto;
-  
+
 
 
   }
@@ -1715,7 +1736,7 @@ padding-top:40px;
 
   #headeSection_bottom {
 
-padding-bottom:40px;
+padding-bottom:100px;
 
   }
 
