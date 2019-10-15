@@ -93,6 +93,7 @@ font-size:20px;
 
 
 .bg_avdelare {
+      background-size:cover;
   background-attachment: fixed;
   background-image: url(../images/div_pic_1.jpg);
   height: 450px;
