@@ -198,6 +198,14 @@ nav ul li a {
 
 }
 
+a:focus {
+
+ outline: 1px solid lightgreen;
+
+
+ }
+
+
 li a:hover {
     background-color:white;
     color:black;
@@ -478,6 +486,13 @@ form {
 
 form input {
   display: block;
+}
+
+input:focus {
+
+background-color:yellow;
+border:1px solid yellow;
+
 }
 
 
@@ -766,6 +781,13 @@ grid-area:sectionLeftSpan7;
 .sectionRightBtn {
   grid-area:sectionRightBtn;
 }
+
+.sectionRightBtn:focus {
+
+border:2px solid yellow;
+
+}
+
 
 .sectionRightBtn  {
   left: 120px;
@@ -1096,6 +1118,14 @@ grid-area: childToVisionText;
 
   }
 
+
+ a:focus {
+
+  outline: 1px solid white;
+  padding: 3px;
+
+  }
+
   li a:hover {
       background-color:white;
       color:black;
@@ -1390,6 +1420,14 @@ grid-area: childToVisionText;
     display: block;
   }
 
+  input:focus {
+
+  background-color:yellow;
+  border:1px solid yellow;
+
+  }
+
+
 
   /* sticky to stay at top position when scrolling up  */
   .sticky {
@@ -1678,6 +1716,12 @@ grid-area: childToVisionText;
 
   .sectionRightBtn {
     grid-area:sectionRightBtn;
+  }
+
+  .sectionRightBtn:focus {
+
+border:2px solid yellow;
+
   }
 
   .sectionRightBtn  {
