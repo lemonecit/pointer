@@ -800,14 +800,29 @@ background-color:#404040;
 
 .headSection_Vision {
 
-  padding-top: 80px;
+
   width: 50%;
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 80px;
+
 
 
 }
+
+
+#headSection_top {
+
+padding-top:40px;
+
+}
+
+
+#headeSection_bottom {
+
+padding-bottom:40px;
+
+}
+
 
 
 .headSection_Vision h3 {
@@ -1690,6 +1705,21 @@ grid-area: childToVisionText;
   text-align: left;
 
   }
+
+  #headSection_top {
+
+padding-top:40px;
+
+  }
+
+
+  #headeSection_bottom {
+
+padding-bottom:40px;
+
+  }
+
+
 
 
   .vision_row1 {
