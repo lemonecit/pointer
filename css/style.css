@@ -869,7 +869,7 @@ grid-area: childToVisionText;
   font-size:24px;
 }
 
-@media screen and (max-width: 1900px) and (min-width:1200px){
+@media screen and (max-width: 1900px) and (min-width:900px){
 
 
   /* body html */
@@ -917,7 +917,7 @@ grid-area: childToVisionText;
 
     .hSection {
           align-items: center;
-          width: 30%;
+          width: 40%;
           display: grid;
           height: 100%;
           grid-template-columns: 100%;
