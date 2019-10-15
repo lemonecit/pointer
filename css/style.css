@@ -13,13 +13,20 @@ html,body {
 /* common font, fontsize, color background */
 
 h1,h2,h3 {
-  font-family: Oleo;
+
   line-height: 1.5em;
   margin: 0px;
   padding: 0px;
   color: #396430;
 }
 
+
+h1{
+font-family: 'Oleo Script', cursive;
+
+
+
+}
 
 
 h2 {
