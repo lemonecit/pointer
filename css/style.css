@@ -137,7 +137,7 @@ font-size:20px;
 
 .bg3 {
   background-attachment: fixed;
-  background-image: url(../images/div-pic-4.jpg);
+  background-image: url(../images/div_pic_5.jpg);
   height: 450px;
   width: 100%;
   background-position: bottom -270px right;
@@ -1029,7 +1029,7 @@ grid-area: childToVisionText;
 
   .bg3 {
     background-attachment: fixed;
-    background-image: url(../images/div-pic-4.jpg);
+    background-image: url(../images/div_pic_5.jpg);
     height: 450px;
     width: 100%;
     background-position: bottom -270px right;
