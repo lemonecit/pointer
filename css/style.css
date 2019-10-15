@@ -812,7 +812,7 @@ text-align: left;
 display: grid;
 
 grid-template-columns: 33.33% 33.33% 33.33%;
-grid-template-rows: 15% auto;
+grid-template-rows: 25% auto;
 grid-template-areas:
 
 "childToVisionH3 . ."
