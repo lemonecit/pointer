@@ -104,6 +104,7 @@ font-size:20px;
 
 
 .bg {
+    background-size:cover;
   background-attachment: fixed;
   background-image: url(../images/StartHead1_blur.png);
   height: 450px;
@@ -116,6 +117,7 @@ font-size:20px;
 
 
 .bg1 {
+    background-size:cover;
   background-attachment: fixed;
   background-image: url(../images/div-pic-2.jpg);
   height: 450px;
@@ -126,6 +128,7 @@ font-size:20px;
 
 
 .bg2 {
+    background-size:cover;
   background-attachment: fixed;
   background-image: url(../images/div-pic-3.jpg);
   height: 450px;
@@ -136,6 +139,7 @@ font-size:20px;
 }
 
 .bg3 {
+  background-size:cover;
   background-attachment: fixed;
   background-image: url(../images/div_pic_5.jpg);
   height: 450px;
@@ -996,6 +1000,7 @@ grid-area: childToVisionText;
 
 
   .bg {
+    background-size: cover;
     background-attachment: fixed;
     background-image: url(../images/StartHead1_blur.png);
     height: 450px;
@@ -1008,6 +1013,7 @@ grid-area: childToVisionText;
 
 
   .bg1 {
+      background-size: cover;
     background-attachment: fixed;
     background-image: url(../images/div-pic-2.jpg);
     height: 450px;
@@ -1018,6 +1024,7 @@ grid-area: childToVisionText;
 
 
   .bg2 {
+      background-size: cover;
     background-attachment: fixed;
     background-image: url(../images/div-pic-3.jpg);
     height: 450px;
@@ -1028,6 +1035,7 @@ grid-area: childToVisionText;
   }
 
   .bg3 {
+      background-size: cover;
     background-attachment: fixed;
     background-image: url(../images/div_pic_5.jpg);
     height: 450px;
