@@ -65,15 +65,15 @@ span,p,label {
     margin:0;
     padding:10px;
 
-    color: white;
+    color: lightgreen;
 
 }
 
 .visio_link_to_faq a {
-    background-color:lightgreen;
+    background-color:#3f7035;
     padding:10px;
     margin:0;
-    color:black;
+    color:white;
     text-decoration: none;
     font-size:20px;
 }
@@ -1299,22 +1299,22 @@ grid-area: childToVisionText;
 
 
   .visio_link_to_faq a:hover {
-
       margin:0;
       padding:10px;
-      background-color: lightgreen;
-      color: white;
+
+      color: lightgreen;
 
   }
 
   .visio_link_to_faq a {
-      background-color:lightgreen;
+      background-color:#3f7035;
       padding:10px;
       margin:0;
-      color:black;
+      color:white;
       text-decoration: none;
       font-size:20px;
   }
+
 
 
   .mainArticle1 {
