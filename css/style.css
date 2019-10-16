@@ -49,10 +49,12 @@ span,p,label {
 
 
 
-.visio_link_to_faq {
-
-top:50px;
-position: relative;
+.visio_link_to_faq  {
+  font-size:20px;
+  margin:0;
+  padding: 10px;
+  top:50px;
+  position: relative;
 
 
 }
@@ -60,17 +62,20 @@ position: relative;
 
 
 .visio_link_to_faq a:hover {
-
-padding:10px;
-background-color: #396430;
-  color: white;
+    margin:0;
+    padding:10px;
+    background-color: #396430;
+    color: white;
 
 }
 
 .visio_link_to_faq a {
-color:black;
-text-decoration: none;
-font-size:20px;
+    background-color:lightgreen;
+    padding:10px;
+    margin:0;
+    color:black;
+    text-decoration: none;
+    font-size:20px;
 }
 
 
@@ -187,7 +192,7 @@ nav ul li {
 
 nav ul li a {
       margin:0;
-      font-weight: bold;
+      /* font-weight: bold; */
       font-size: 20px;
       color: white;
       text-transform: capitalize;
@@ -1112,7 +1117,7 @@ grid-area: childToVisionText;
 
   nav ul li a {
         margin:0;
-        font-weight: bold;
+        /* font-weight: bold; */
         font-size: 16px;
         color: white;
         text-transform: capitalize;
@@ -1294,18 +1299,22 @@ grid-area: childToVisionText;
 
 
   .visio_link_to_faq a:hover {
-
-  padding:10px;
-  background-color: #396430;
-    color: white;
+      margin:0;
+      padding:10px;
+      background-color: #396430;
+      color: white;
 
   }
 
   .visio_link_to_faq a {
-  color:black;
-  text-decoration: none;
-  font-size:20px;
+      background-color:lightgreen;
+      padding:10px;
+      margin:0;
+      color:black;
+      text-decoration: none;
+      font-size:20px;
   }
+
 
   .mainArticle1 {
             padding-bottom: 85px;
