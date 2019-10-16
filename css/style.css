@@ -1299,6 +1299,7 @@ grid-area: childToVisionText;
 
 
   .visio_link_to_faq a:hover {
+    
       margin:0;
       padding:10px;
       background-color: #396430;
