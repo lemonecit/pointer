@@ -548,32 +548,33 @@ border:1px solid yellow;
   grid-template-areas: " profile1 profile2 profile3 profile4";
 }
 
-.kontaktProfile label {
+.kontaktProfile span {
+  display: block;
   margin:0;
   padding:0;
   color:black;
 }
 
-.profile1 label:nth-child(2) {
+.profile1 span:nth-child(2) {
     margin:0;
     padding:0;
     color:#3F7035 !important;
 }
 
-.profile2 label:nth-child(2) {
+.profile2 span:nth-child(2) {
     margin:0;
     padding:0;
     color:#3F7035 !important;
 }
 
-.profile3 label:nth-child(2) {
+.profile3 span:nth-child(2) {
   margin:0;
   padding:0;
   color:#3F7035 !important;
 }
 
 
-.profile4 label:nth-child(2) {
+.profile4 span:nth-child(2) {
   margin:0;
   padding:0;
   color:#3F7035 !important;
@@ -1492,32 +1493,33 @@ grid-area: childToVisionText;
     grid-column-gap: 10%;
   }
 
-  .kontaktProfile label {
+  .kontaktProfile span {
+      display: block;
     margin:0;
     padding:0;
     color:black;
   }
 
-  .profile1 label:nth-child(2) {
+  .profile1 span:nth-child(2) {
       margin:0;
       padding:0;
       color:#3F7035 !important;
   }
 
-  .profile2 label:nth-child(2) {
+  .profile2 span:nth-child(2) {
       margin:0;
       padding:0;
       color:#3F7035 !important;
   }
 
-  .profile3 label:nth-child(2) {
+  .profile3 span:nth-child(2) {
     margin:0;
     padding:0;
     color:#3F7035 !important;
   }
 
 
-  .profile4 label:nth-child(2) {
+  .profile4 span:nth-child(2) {
     margin:0;
     padding:0;
     color:#3F7035 !important;
