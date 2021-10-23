@@ -1964,9 +1964,9 @@ span, p, label {
     grid-template-rows: auto;
     grid-template-areas:
         "HeaderContent"
-        "maincontent"
-        "mainArticle1"
-        "sectionKontakt";
+        "maincontent";
+        /* "mainArticle1"
+        "sectionKontakt"; */
 }
 
 
@@ -2011,7 +2011,7 @@ main .maincontent {
 
 
 .HeaderVideo {
-  /* padding-bottom: 250px; */
+  padding-bottom: 100px;
   grid-area: HeaderVideo;
   display:grid;
   grid-template-columns: 100%;
