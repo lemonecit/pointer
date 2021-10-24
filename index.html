@@ -124,7 +124,7 @@
 
 
 <section class="HeaderVideo">
-<h2 class="headerVideo_h2">Film om interaktiva busshållplatser</h2>
+<h2>Film om interaktiva busshållplatser</h2>
   <!-- ##################### -->
   <!-- Film om interaktiva busshållplatser -->
     <video class="mainVideo" role="img" aria-span="Film om interaktiva busshållplatser" controls>
@@ -432,11 +432,13 @@
 <script>
     window.onscroll = function() {myFunction()};
 
-    var navbar = document.getElementById("navbar");
-    var sticky = navbar.offsetTop;
+    let navbar = document.getElementById("mobile_navbar") || document.getElementById("navbar");
+    let sticky = navbar.offsetTop;
 
     function myFunction() {
       if (window.pageYOffset >= sticky) {
+
+        console.log("hit!!!");
         navbar.classList.add("sticky")
       } else {
         navbar.classList.remove("sticky");

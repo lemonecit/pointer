@@ -1924,13 +1924,21 @@ padding-bottom:100px;
 }
 
 
+ h2 {
+
+  font-size: calc(26px + (32 - 26) * ((100vw - 550px) / (550 -300)));
+
+}
+
+
+
 .hSection {
   align-items: center;
-  width: 80%;
+  width: 90%;
   display: grid;
   height: 100%;
   grid-template-columns: 100%;
-  grid-template-rows: 39% 11% 11% 39%;
+  grid-template-rows: 30% 22% 22% 30%;
   grid-template-areas:
       "."
       "h1_header"
@@ -2075,11 +2083,37 @@ main .maincontent {
   /* padding-bottom: 40px; */
 }
 
+.contentAsideRight img {
+  width: calc(100% - 10px);
+  height: auto;
+  /* background-size: contain; */
+}
+
 .contentAsideRight2 img {
+  width: calc(100% - 10px);
+  height: auto;
+  /* background-size: contain; */
+}
+
+.contentAsideRight1 img {
   width: 100%;
-  height: 30%;
+  height: auto;
   background-size: contain;
 }
+
+.contentAsideRight3 img {
+  width: 100%;
+  height: auto;
+  background-size: contain;
+}
+
+
+.contentAsideRight4 img {
+  width: calc(100% - 10px);
+  height: auto;
+  background-size: contain;
+}
+
 
 .HeaderContent {
   width: 80%;
@@ -2161,35 +2195,38 @@ nav .pointerNav {
 
 
 .sectionFooter {
-  top: 25%;
-  height: 100px;
+  grid-row-gap: 40px;
+  text-align: center;
+  top: 5%;
+  height: 400px;
   /* align-items: center; */
   margin-left: auto;
   display: grid;
-  width: 75%;
-  grid-template-columns:  100%;
-  grid-template-rows: 30% 30% 10% 30%;
-  grid-template-areas: 
-  "footerFirstColumn" 
-  "footerSecondColumn" 
-  "." 
-  "footerThirdColumn";
+  width: 80%;
+  grid-template-columns: 100%;
+  grid-template-rows: 25% 20% 25%;
+  grid-template-areas:
+      "footerFirstColumn"
+      "footerSecondColumn"
+      "footerThirdColumn";
   margin-right: auto;
   position: relative;
 }
 
+
+
 .footerFirstColumn {
+  grid-row-gap: 10%;
   grid-area: footerFirstColumn;
   display: grid;
-  grid-template-columns: 17% 83%;
-  grid-template-rows: 20% 20% 20% 12% auto auto;
+  grid-template-columns: 16% 3% 65%;
+  grid-template-rows: 12% 12% 12% 12% auto;
   grid-template-areas:
-      "sectionLeftSpan1 sectionLeftSpan1"
-      "sectionLeftSpan2 sectionLeftSpan2"
-      "sectionLeftSpan3 sectionLeftSpan3"
-      ". ."
-      "sectionLeftSpan4 sectionLeftSpan5"
-      "sectionLeftSpan6 sectionLeftSpan7";
+      ". sectionLeftSpan1 sectionLeftSpan1"
+      ". sectionLeftSpan2 sectionLeftSpan2"
+      ". sectionLeftSpan3 sectionLeftSpan3"
+      ". sectionLeftSpan4 sectionLeftSpan5"
+      ". sectionLeftSpan6 sectionLeftSpan7";
 }
 
 
@@ -2260,6 +2297,67 @@ nav .pointerNav {
 
 .profile4 {
   grid-area: profile4;
+}
+
+footer {
+  height: 450px;
+  padding-top: 120px;
+  margin: 0;
+  padding: 0;
+  background-color: #404040;
+}
+
+
+.bg_avdelare {
+  background-size: cover;
+  background-attachment: fixed;
+  background-image: url(../images/div_pic_1.jpg);
+  height: 300px;
+  width: 100%;
+  background-position: bottom 190px right;
+  background-repeat: no-repeat;
+}
+
+
+.bg {
+  background-size: cover;
+  background-attachment: fixed;
+  background-image: url(../images/StartHead1_blur.png);
+  height: 265px;
+  width: 100%;
+  background-position: bottom 315px right;
+  background-repeat: no-repeat;
+}
+
+.bg2 {
+  background-size: cover;
+  background-attachment: fixed;
+  background-image: url(../images/div-pic-3.jpg);
+  height: 300px;
+  width: 100%;
+  background-position: bottom 30px right;
+  background-repeat: no-repeat;
+}
+
+
+.bg1 {
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url(../images/div-pic-2.jpg);
+    height: 300px;
+    width: 100%;
+    background-position: -332px;
+    background-repeat: no-repeat;
+}
+
+.bg3 {
+  background-size: cover;
+  background-attachment: fixed;
+  background-image: url(../images/div_pic_5.jpg);
+  height: 350px;
+  width: 100%;
+  background-position: bottom 200px right;
+  background-repeat: no-repeat;
 }
 
 }
