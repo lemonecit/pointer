@@ -603,10 +603,10 @@ border:1px solid yellow;
 
 
 
-.kontaktProfile  img {
+/* .kontaktProfile  img {
   border-radius: 50%;
   width:80%;
-}
+} */
 
 
 .kontaktProfile label {
@@ -1502,7 +1502,7 @@ nav{
   .sectionKontakt {
       padding-top:80px;
       padding-bottom:80px;
-      width:50%;
+      width:auto;
       margin-left:auto;
       margin-right:auto;
       display: grid;
@@ -1526,10 +1526,10 @@ nav{
     text-align: center;
     display: grid;
     grid-area: kontaktProfile;
-    grid-template-columns: 20% 20% 20% 20%;
+    grid-template-columns: auto auto auto auto;
     grid-template-rows: 100%;
     grid-template-areas: " profile1 profile2 profile3 profile4";
-    grid-column-gap: 10%;
+    grid-column-gap: 1%;
   }
 
   .kontaktProfile span {
@@ -1568,7 +1568,7 @@ nav{
 
   .kontaktProfile  img {
     border-radius: 50%;
-    width:100%;
+    width: calc(200px + (250 - 200) * ((100vw - 1900px) / (1900 - 900)));
   }
 
 
@@ -2309,6 +2309,14 @@ nav .pointerNav {
   padding-bottom: 80px;
 }
 
+.kontaktProfile img {
+
+  width: calc(170px + (190 - 170) * ((100vw - 900px) / (900 - 600 )));
+  /* font-size: calc(26px + (32 - 26) * ((100vw - 550px) / (550 -300))); */
+   border-radius:50%;
+  
+  }
+
 .profile1 {
   grid-area: profile1;
 }
@@ -2787,6 +2795,15 @@ nav .pointerNav {
   padding-bottom: 80px;
 }
 
+
+.kontaktProfile img {
+
+width: calc(150px + (170 - 150) * ((100vw - 550px) / (550 - 300 )));
+/* font-size: calc(26px + (32 - 26) * ((100vw - 550px) / (550 -300))); */
+ border-radius:50%;
+
+}
+
 .profile1 {
   grid-area: profile1;
 }
@@ -2880,14 +2897,6 @@ display: none;
 
 }
 
-.kontaktProfile {
-  text-align: center;
-  display: grid;
-  grid-area: kontaktProfile;
-  grid-template-columns: 25% 25% 25% 25%;
-  grid-template-rows: 100%;
-  grid-template-areas: " profile1 profile2 profile3 profile4";
-}
 
 
 
