@@ -603,10 +603,12 @@ border:1px solid yellow;
 
 
 
-/* .kontaktProfile  img {
+.kontaktProfile  img {
   border-radius: 50%;
-  width:80%;
-} */
+  /* font-size: calc(96px + (102 - 96) * ((100vw - 550px) / (550 - 300))); */
+
+  width: calc(250px + (300 - 250) * ((100vw - 2100px) / (2100 - 1900)));
+}
 
 
 .kontaktProfile label {
@@ -803,7 +805,7 @@ grid-area:sectionLeftSpan7;
 }
 
 .sectionRightInput2 {
-  grid-ara:sectionRightInput2;
+  grid-area:sectionRightInput2;
 }
 
 .sectionRightBtn {
@@ -970,7 +972,7 @@ grid-area: childToVisionText;
   font-size:24px;
 }
 
-@media screen and (max-width: 1900px) and (min-width:900px){
+@media screen and (max-width: 2100px) and (min-width:900px){
 
 
 
@@ -1521,6 +1523,13 @@ nav{
   }
 
 
+  .kontaklProfile {
+
+background-color:black;
+width:500px;
+
+  }
+
   .kontaktProfile {
     text-align: center;
     display: grid;
@@ -1531,12 +1540,22 @@ nav{
     grid-column-gap: 1%;
   }
 
+  .kontaktProfile img {
+    border-radius: 50%;
+    width: calc(200px + (250 - 200) * ((100vw - 1900px) / (1900 - 900)));
+  }
+
   .kontaktProfile span {
       display: block;
     margin:0;
     padding:0;
     color:black;
   }
+
+  .kontaktProfile label {
+    display: block;
+  }
+
 
   .profile1 span:nth-child(2) {
       margin:0;
@@ -1565,16 +1584,10 @@ nav{
 
 
 
-  .kontaktProfile  img {
-    border-radius: 50%;
-    width: calc(200px + (250 - 200) * ((100vw - 1900px) / (1900 - 900)));
-  }
 
 
-  .kontaktProfile label {
-    display: block;
-  }
 
+ 
   .profile1 {
     grid-area:profile1;
   }
@@ -1767,7 +1780,7 @@ nav{
   }
 
   .sectionRightInput2 {
-    grid-ara:sectionRightInput2;
+    grid-area:sectionRightInput2;
   }
 
   .sectionRightBtn {
