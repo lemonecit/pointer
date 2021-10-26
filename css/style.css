@@ -186,6 +186,22 @@ span,p,label {
 /* ################ */
 /* navigation  */
 
+
+a:focus {
+
+ outline: 1px solid lightgreen;
+
+
+ }
+
+
+li a:hover {
+    background-color:white;
+    color:black;
+   font-weight: 500;
+}
+
+
 nav ul li {
   display: inline;
 }
@@ -204,19 +220,6 @@ nav ul li a {
 
 }
 
-a:focus {
-
- outline: 1px solid lightgreen;
-
-
- }
-
-
-li a:hover {
-    background-color:white;
-    color:black;
-   font-weight: 500;
-}
 
 
 nav .pointerNav {
@@ -227,13 +230,19 @@ nav .pointerNav {
 
 }
 
-nav {
+nav#navbar {
       display: grid;
       grid-template-columns: 25% 15% 40% 20%;
       grid-template-rows: 100%;
       grid-template-areas: ". logo pointerNav .";
       height: 120px;
       background-color: #3f7035;
+}
+
+nav#mobile_navbar {
+
+display: none;
+
 }
 
 
@@ -511,6 +520,18 @@ border:1px solid yellow;
 }
 
 .sticky + .content {
+  padding-top: 60px;
+}
+
+/* sticky to stay at top position when scrolling up  */
+.sticky1 {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 55555;
+}
+
+.sticky1 + .content {
   padding-top: 60px;
 }
 
@@ -1117,7 +1138,7 @@ grid-area: childToVisionText;
   /* navigation  */
 
 
-  nav#mobile_navbar {
+nav{
 
 
     display: none;
@@ -1167,7 +1188,7 @@ grid-area: childToVisionText;
 
   }
 
-  nav {
+  nav#navbar {
         display: grid;
         grid-template-columns: 25% 15% 40% 20%;
         grid-template-rows: 100%;
@@ -1176,6 +1197,10 @@ grid-area: childToVisionText;
         background-color: #3f7035;
   }
 
+  nav#mobile_navbar{
+
+    display: none;
+  }
 
 
   /* logo */
@@ -2359,5 +2384,21 @@ footer {
   background-position: bottom 200px right;
   background-repeat: no-repeat;
 }
+
+nav#mobile_navbar {
+  display: grid;
+  grid-template-columns: 25% 15% 40% 20%;
+  grid-template-rows: 100%;
+  grid-template-areas: ". logo pointerNav .";
+  height: 120px;
+  background-color: #3f7035;
+}
+
+nav#navbar {
+
+display: none;
+
+}
+
 
 }
