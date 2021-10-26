@@ -1500,20 +1500,19 @@ nav{
 
 
   .sectionKontakt {
-      padding-top:80px;
-      padding-bottom:80px;
-      width:auto;
-      margin-left:auto;
-      margin-right:auto;
-      display: grid;
-      grid-template-columns: 100%;
-      grid-row-gap: 10px;
-      grid-template-rows: 20% 80%;
-      grid-template-areas:
-      "kontaktH3"
-      "kontaktProfile";
-  }
-
+    padding-top: 40px;
+    padding-bottom: 40px;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-row-gap: 5px;
+    grid-template-rows: 15% 75%;
+    grid-template-areas:
+        "kontaktH3"
+        "kontaktProfile";
+}
   .kontaktH3 {
       grid-area:kontaktH3;
       color:#3F7035;
@@ -2278,7 +2277,7 @@ nav .pointerNav {
   display: grid;
   grid-template-columns: 100%;
   /* grid-row-gap: 10px; */
-  grid-template-rows: 5% 95%;
+  grid-template-rows: 10% 90%;
   grid-template-areas:
       "kontaktH3"
       "kontaktProfile";
@@ -2764,7 +2763,7 @@ nav .pointerNav {
   display: grid;
   grid-template-columns: 100%;
   /* grid-row-gap: 10px; */
-  grid-template-rows: 5% 95%;
+  grid-template-rows: 10% 90%;
   grid-template-areas:
       "kontaktH3"
       "kontaktProfile";
