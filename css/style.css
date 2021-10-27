@@ -222,22 +222,8 @@ nav ul li a {
 
 
 
-nav .pointerNav {
-  align-self: center;
-  grid-area:pointerNav;
-  width: 100%;
-  margin: auto;
 
-}
 
-nav#navbar {
-      display: grid;
-      grid-template-columns: 25% 15% 40% 20%;
-      grid-template-rows: 100%;
-      grid-template-areas: ". logo pointerNav .";
-      height: 120px;
-      background-color: #3f7035;
-}
 
 nav#mobile_navbar {
 
@@ -1018,8 +1004,9 @@ grid-area: childToVisionText;
 
   h3 {
       font-family: 'Oleo Script', cursive;
-    font-size:20px;
-  }
+      font-size: calc(30px + (35 - 30) * ((100vw - 2100px) / (2100 - 900)));
+      padding:10px;
+    }
 
 
 
@@ -1126,7 +1113,7 @@ grid-area: childToVisionText;
   .h2_header {
     top:20px;
     position:relative;
-    font-size: calc(50px + (75 - 50) * ((100vw - 1900px) / (1900 -900)));
+    font-size: calc(50px + (80 - 50) * ((100vw - 1900px) / (1900 -900)));
     font-family: helvetica;
     text-shadow: 2px 2px black;
     text-align: center;
@@ -1889,10 +1876,10 @@ padding-bottom:100px;
   display: grid;
 
   grid-template-columns: 33.33% 33.33% 33.33%;
-  grid-template-rows: 15% auto;
+  grid-template-rows: auto auto;
   grid-template-areas:
 
-  "childToVisionH3 . ."
+  "childToVisionH3 childToVisionH3 ."
   "childToVisionText childToVisionText childToVisionImg "
 
 
@@ -2170,6 +2157,10 @@ main .maincontent {
   /* padding-bottom: 40px; */
 }
 
+.logo img {
+display:none;
+}
+
 .contentAsideRight img {
   width: calc(100% - 10px);
   height: auto;
@@ -2251,7 +2242,11 @@ main .maincontent {
   
 
 
+nav#mobile_navbar {
 
+  display:none;
+
+}
 
 nav#navbar {
 
@@ -2261,13 +2256,41 @@ display:none;
 }
 
 nav .pointerNav {
+
   align-self: center;
-  grid-area: pointerNav;
-  /* width: 100%; */
-  margin: auto;
+  margin-right: auto;
+  /* height: 32
+px
+; */
+  margin-left: auto;
+  padding: 0;
+  /* width: 80%; */
+}
+
+nav#surf_navbar {
+
+ 
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 100%;
+  grid-template-areas: "pointerNav";
+  height: 120px;
+  background-color: #3f7035;
 }
 
 
+
+nav ul li a {
+  margin: 0;
+  /* font-weight: bold; */
+  font-size: calc(20px + (25 - 20) * ((100vw - 900px) / (900 - 550)));
+  color: white;
+  text-decoration: none;
+  float: left;
+  padding: 10px;
+  width: auto;
+  text-align: center;
+}
 
 
 
@@ -2468,20 +2491,7 @@ footer {
   background-repeat: no-repeat;
 }
 
-nav#mobile_navbar {
-  display: grid;
-  grid-template-columns: 25% 15% 40% 20%;
-  grid-template-rows: 100%;
-  grid-template-areas: ". logo pointerNav .";
-  height: 120px;
-  background-color: #3f7035;
-}
 
-nav#navbar {
-
-display: none;
-
-}
 
 
 
@@ -2963,6 +2973,18 @@ nav#mobile_navbar {
 }
 
 nav#navbar {
+
+display: none;
+
+}
+
+nav#surf_navbar {
+
+display: none;
+
+}
+
+.logo img {
 
 display: none;
 
