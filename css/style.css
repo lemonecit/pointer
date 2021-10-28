@@ -1187,7 +1187,7 @@ nav{
     background-color: #3f7035;
 }
 
-  nav#mobile_navbar{
+  select#mobile_navbar{
 
     display: none;
   }
@@ -2242,7 +2242,7 @@ display:none;
   
 
 
-nav#mobile_navbar {
+select#mobile_navbar {
 
   display:none;
 
@@ -2278,6 +2278,13 @@ nav#surf_navbar {
   background-color: #3f7035;
 }
 
+
+#surf_navbar .pointerNav {
+  align-self: center;
+  grid-area: pointerNav;
+  /* width: 100%; */
+  margin: auto;
+}
 
 
 nav ul li a {
@@ -2757,23 +2764,13 @@ main .maincontent {
 
   
 
+select.mobilMenua {
 
-
-
-nav#navbar {
-
-
-display:none;
+height:40px;
+width:100%;
+text-align: center;
 
 }
-
-nav .pointerNav {
-  align-self: center;
-  grid-area: pointerNav;
-  /* width: 100%; */
-  margin: auto;
-}
-
 
 
 .sectionRightBtn {
@@ -2963,14 +2960,14 @@ footer {
   background-repeat: no-repeat;
 }
 
-nav#mobile_navbar {
+/* nav#mobile_navbar {
   display: grid;
   grid-template-columns: 25% 15% 40% 20%;
   grid-template-rows: 100%;
   grid-template-areas: ". logo pointerNav .";
   height: 120px;
   background-color: #3f7035;
-}
+} */
 
 nav#navbar {
 
