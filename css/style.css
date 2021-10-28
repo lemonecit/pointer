@@ -2762,7 +2762,16 @@ main .maincontent {
 
 
 
-  
+  .mobil_header {
+
+    padding: 10px;
+    margin-right: auto;
+    width: calc(100% - 17%);
+    margin-left: auto;
+    margin-top: 4px;
+    background-color:#3F7035;
+
+  }
 
 select.mobilMenua {
 
