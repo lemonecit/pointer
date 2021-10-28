@@ -2996,6 +2996,15 @@ display: none;
 
 }
 
+.sticky {
+  background-color:#3F7035;
+  color:white;
+  position: fixed;
+  right:1px;
+  top: 0;
+  width: 100%;
+  z-index: 55555;
+}
 
 
 
