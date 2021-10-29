@@ -2001,6 +2001,16 @@ padding-bottom:100px;
 
 @media screen and (max-width: 900px) and (min-width:550px){
 
+  h1, h2, h3 {
+    text-align: center;
+    font-family: 'Oleo Script', cursive;
+    line-height: 1.5em;
+    margin: 0px;
+    padding: 0px;
+    color: #396430;
+}
+
+
 
   .h2_header, h2 {
 
@@ -2602,12 +2612,19 @@ footer {
 
 
  h2 {
-
+margin-top: 20px;
   font-size: calc(35px + (45 - 35) * ((100vw - 550px) / (550 -300)));
   text-align: center;
 }
 
-
+h1, h2, h3 {
+  text-align: center;
+  font-family: 'Oleo Script', cursive;
+  line-height: 1.5em;
+  margin: 0px;
+  padding: 0px;
+  color: #396430;
+}
 
 .hSection {
 
@@ -2737,8 +2754,8 @@ main .maincontent {
 }
 
 .mainArticle1 {
-  padding-bottom: 85px;
-  padding-top: 45px;
+  padding-bottom: 40px;
+  padding-top: 20px;
   display: grid;
   width: 75%;
   margin-left: auto;
@@ -2841,7 +2858,7 @@ main .maincontent {
 
 .HeaderContent {
   width: 80%;
-  padding-top: 80px;
+  padding-top: 30px;
   display: grid;
   grid-area: HeaderContent;
   grid-template-columns: 100%;
@@ -2849,14 +2866,14 @@ main .maincontent {
   grid-template-areas: "mainArticle";
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 80px;
+  padding-bottom: 20px;
 
 }
 
 
 
 .vision_row1 {
-  /* padding-top: 40px; */
+  padding-top: 32px;
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: auto;
@@ -2869,7 +2886,7 @@ main .maincontent {
 .childToVisionImg {
 grid-area: childToVisionImg;
 border-radius: 50%;
-width: 150px;
+width: 100px;
 margin-left: auto;
 margin-right: auto;
 }
@@ -2899,7 +2916,7 @@ margin-right: auto;
 
   .mobil_header {
 
-    padding: 10px;
+    padding: 2px;
     margin-right: auto;
     width: calc(100% - 17%);
     margin-left: auto;
