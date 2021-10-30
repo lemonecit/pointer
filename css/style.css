@@ -83,8 +83,6 @@ html,body {
   font-family: 'Oleo Script', cursive;
   }
 
-
-
   h2 {
       font-family: 'Oleo Script', cursive;
     font-size: calc(36px + (42 - 36) * ((100vw - 2100px) / (2100 - 900)));
@@ -96,8 +94,6 @@ html,body {
       padding:10px;
     }
 
-
-
   span,p,label {
     font-size:16px;
     line-height: 1.5em;
@@ -105,27 +101,19 @@ html,body {
     padding: 0px;
   }
 
-
-
   .visio_link_to_faq  {
     font-size:20px;
     margin:0;
     padding: 10px;
     top:50px;
     position: relative;
-  
-  
   }
-  
-  
-  
+    
   .visio_link_to_faq a:hover {
       margin:0;
       padding:10px;
-  
       color: lightgreen;
-  
-  }
+    }
   
   .visio_link_to_faq a {
       background-color:#3f7035;
@@ -162,8 +150,6 @@ html,body {
     background-repeat: no-repeat;
   }
 
-
-
   .bg {
     background-size: cover;
     background-attachment: fixed;
@@ -173,8 +159,6 @@ html,body {
     background-position: bottom 190px right;
     background-repeat: no-repeat;
   }
-
-
 
 
   .bg1 {
@@ -210,9 +194,6 @@ html,body {
 
   }
 
-
-
-
   .h1_header {
 
       text-shadow: 2px 2px black;
@@ -236,7 +217,6 @@ html,body {
     color: white;
     grid-area: h3_header;
     margin: 0;
-    /* padding: 10px; */
     text-transform: uppercase;
 }
 
