@@ -464,7 +464,7 @@ Between 550px and 900 px
 
     .kontaktProfile {
         grid-column-gap:25px;
-        grid-row-gap: 0px;
+        grid-row-gap: 10px;
         text-align: center;
         display: grid;
         grid-area: kontaktProfile;
