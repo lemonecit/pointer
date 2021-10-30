@@ -1,0 +1,756 @@
+/* Style för Mobile 
+Between 300 px and 550 px
+*/
+
+@media (min-width: 300px) and (max-width: 550px) {
+
+    .h1_header {
+  
+    font-size: calc(96px + (102 - 96) * ((100vw - 550px) / (550 - 300)));
+  
+  }
+  
+  .h2_header, h2 {
+    font-size: calc(24px + (30 - 24) * ((100vw - 550px) / (550 -300)));
+  }
+  
+  
+   h2 {
+  margin-top: 20px;
+    font-size: calc(35px + (45 - 35) * ((100vw - 550px) / (550 -300)));
+    text-align: center;
+  }
+  
+  h1, h2, h3 {
+    text-align: center;
+    font-family: 'Oleo Script', cursive;
+    line-height: 1.5em;
+    margin: 0px;
+    padding: 0px;
+    color: #396430;
+  }
+  
+  .hSection {
+  
+  
+    align-items: center;
+    width: 90%;
+    display: grid;
+    height: 100%;
+    grid-template-columns: 100%;
+    grid-template-rows: 30% 22% 22% 30%;
+    grid-template-areas:
+        "."
+        "h1_header"
+        "h3_header"
+        ".";
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  
+  span, p, label {
+    font-size: 16px;
+    line-height: 1.5em;
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  
+    html,body {
+      margin:0;
+      padding:0;
+      width:100%;
+      height:100%;
+      font-family: helvetica;
+    }
+  
+  
+    .mainIndex {
+      display: grid;
+      grid-template-columns: 100%;
+      grid-template-rows: auto;
+      grid-template-areas:
+          "HeaderContent"
+          "maincontent";
+          /* "mainArticle1"
+          "sectionKontakt"; */
+  }
+  
+  
+  main .maincontent {
+    overflow: hidden;
+    height: 100%;
+    grid-row-gap: 5%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+        "HeaderBackground"
+        "HeaderVideo";
+    padding-top: 0px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  
+  .HeaderBackground {
+    padding-top: 20px;
+    grid-column-gap: 40px;
+    display: grid;
+    grid-area: HeaderBackground;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+    "mainContentArticle1Right"
+    "mainContentArticle1Left" 
+    ;
+  }
+  
+  .mainContentArticle1Left {
+    grid-area: mainContentArticle1Left;
+  }
+  
+  .mainContentArticle1Right {
+    align-self: center;
+    grid-area: mainContentArticle1Right;
+  }
+  
+  
+  .HeaderVideo {
+    padding-bottom: 100px;
+    grid-area: HeaderVideo;
+    display:grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+    "headerVideoH2"
+    "mainVideo";
+  
+  }
+  
+  .headerVideo_h2 {
+    grid-area: headerVideoH2;
+  
+  }
+  
+  .mainVideo {
+    width: 100%;
+    grid-area: mainVideo;
+  }
+  
+  
+  .headSection_Vision {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .bg1 {
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url(../images/div-pic-2.jpg);
+    height: 450px;
+    width: 100%;
+    background-position: -389px;
+    background-repeat: no-repeat;
+  }
+  
+  .mainArticle1 {
+    padding-bottom: 40px;
+    padding-top: 20px;
+    display: grid;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    grid-column-gap: 8%;
+    grid-row-gap: 40px;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "section2_h2"
+        "contentAsideRight"
+        "contentAsideLeft"
+        "contentAsideRight1"
+        "contentAsideLeft1"
+        "contentAsideRight2"
+        "contentAsideLeft2"
+        "contentAsideRight3" 
+        "contentAsideLeft3"
+        "contentAsideRight4"
+        "contentAsideLeft4";
+  }
+  
+  .contentAsideLeft {
+    grid-area: contentAsideLeft;
+  }
+  
+  .contentAsideRight {
+    grid-area: contentAsideRight;
+  }
+  
+  .contentAsideRight1 {
+    grid-area: contentAsideRight1;
+  }
+  
+  .contentAsideLeft1 {
+    grid-area: contentAsideLeft1;
+  }
+  
+  .contentAsideLeft2 {
+    grid-area: contentAsideLeft2;
+  }
+  
+  .contentAsideRight2 {
+    grid-area: contentAsideRight2;
+  }
+  
+  .contentAsideLeft3 {
+    grid-area: contentAsideLeft3;
+  }
+  
+  .contentAsideRight3 {
+    grid-area: contentAsideRight3;
+  }
+  
+  .contentAsideLeft4 {
+    grid-area: contentAsideLeft4;
+  }
+  
+  .contentAsideRight4 {
+    grid-area: contentAsideRight4;
+  }
+  
+  .section2_h2 {
+    text-align: center;
+    grid-area: section2_h2;
+    /* padding-bottom: 40px; */
+  }
+  
+  .contentAsideRight img {
+    width: calc(100% - 10px);
+    height: auto;
+    /* background-size: contain; */
+  }
+  
+  .contentAsideRight2 img {
+    width: calc(100% - 10px);
+    height: auto;
+    /* background-size: contain; */
+  }
+  
+  .contentAsideRight1 img {
+    width: 100%;
+    height: auto;
+    background-size: contain;
+  }
+  
+  .contentAsideRight3 img {
+    width: 100%;
+    height: auto;
+    background-size: contain;
+  }
+  
+  
+  .contentAsideRight4 img {
+    width: calc(100% - 10px);
+    height: auto;
+    background-size: contain;
+  }
+  
+  
+  .HeaderContent {
+    width: 80%;
+    padding-top: 30px;
+    display: grid;
+    grid-area: HeaderContent;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+    grid-template-areas: "mainArticle";
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20px;
+  
+  }
+  
+  
+  
+  .vision_row1 {
+    padding-top: 32px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "childToVisionImg "
+        "childToVisionH3"
+        "childToVisionText";
+  }
+  
+  .childToVisionImg {
+  grid-area: childToVisionImg;
+  border-radius: 50%;
+  width: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  }
+  
+  .headSection_Vision h3 {
+    text-align: center;
+  }
+  
+  
+  .mainArticle {
+        grid-area:mainArticle;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+  }
+  
+  
+  
+  
+  
+  
+  .HeaderBackground img {
+      width:100%;
+  }
+  
+  
+  
+    .mobil_header {
+  
+      padding: 2px;
+      margin-right: auto;
+      width: calc(100% - 17%);
+      margin-left: auto;
+      margin-top: 4px;
+      background-color:#3F7035;
+  
+    }
+  
+  select.mobilMenua {
+  
+  height:40px;
+  width:100%;
+  text-align: center;
+  
+  }
+  
+  
+  .sectionRightBtn {
+    left: 95px;
+    text-align: center;
+    background-color: #3F7035;
+    color: white;
+    border: 1px solid beige;
+    width: 115px;
+    position: relative;
+    font-weight: bold;
+  }
+  
+  
+  .sectionFooter {
+    grid-row-gap: 40px;
+    text-align: center;
+    top: 5%;
+    height: 400px;
+    /* align-items: center; */
+    margin-left: auto;
+    display: grid;
+    width: 80%;
+    grid-template-columns: 100%;
+    grid-template-rows: 25% 20% 25%;
+    grid-template-areas:
+        "footerFirstColumn"
+        "footerSecondColumn"
+        "footerThirdColumn";
+    margin-right: auto;
+    position: relative;
+  }
+  
+  
+  
+  .footerFirstColumn {
+    grid-row-gap: 10%;
+    grid-area: footerFirstColumn;
+    display: grid;
+    grid-template-columns: 16% 3% 65%;
+    grid-template-rows: 12% 12% 12% 12% auto;
+    grid-template-areas:
+        ". sectionLeftSpan1 sectionLeftSpan1"
+        ". sectionLeftSpan2 sectionLeftSpan2"
+        ". sectionLeftSpan3 sectionLeftSpan3"
+        ". sectionLeftSpan4 sectionLeftSpan5"
+        ". sectionLeftSpan6 sectionLeftSpan7";
+  }
+  
+  
+  .footerSecondColumn {
+    grid-area: footerSecondColumn;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 25% 25% 25% 25%;
+    grid-template-areas:
+        "sectionMiddleSpan1"
+        "sectionMiddleHr"
+        "sectionMiddleSpan2"
+        "sectionMiddleUl";
+  }
+  
+  .sectionKontakt {
+    padding-top: 0px;
+    padding-bottom: 20px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 100%;
+    /* grid-row-gap: 10px; */
+    grid-template-rows: 10% 90%;
+    grid-template-areas:
+        "kontaktH3"
+        "kontaktProfile";
+  }
+  
+  
+  .kontaktH3 {
+    margin-top:20px;
+    text-align:center;
+    grid-area: kontaktH3;
+    color: #3F7035;
+    /* font-size: 30px; */
+    align-self: center;
+  }
+  
+  
+  .kontaktProfile {
+    grid-row-gap: 20px;
+    text-align: center;
+    display: grid;
+    grid-area: kontaktProfile;
+    grid-template-columns: 100%;
+    grid-template-rows: 25% 25% 25% 25%;
+    grid-template-areas:
+        "profile1"
+        "profile2"
+        "profile3"
+        "profile4";
+    padding-bottom: 80px;
+  }
+  
+  .profile1 span:nth-child(2) {
+    margin: 0;
+    padding: 0;
+    color: #3F7035 !important;
+  }
+  
+  .profile2 span:nth-child(2) {
+    margin: 0;
+    padding: 0;
+    color: #3F7035 !important;
+  }
+  
+  .profile3 span:nth-child(2) {
+    margin: 0;
+    padding: 0;
+    color: #3F7035 !important;
+  }
+  
+  .profile4 span:nth-child(2) {
+    margin: 0;
+    padding: 0;
+    color: #3F7035 !important;
+  }
+  
+  .kontaktProfile span {
+    display: block;
+    margin: 0;
+    padding: 0;
+    color: black;
+  }
+  
+  
+  .kontaktProfile img {
+  
+  width: calc(150px + (170 - 150) * ((100vw - 550px) / (550 - 300 )));
+  /* font-size: calc(26px + (32 - 26) * ((100vw - 550px) / (550 -300))); */
+   border-radius:50%;
+  
+  }
+  
+  .profile1 {
+    grid-area: profile1;
+  }
+  
+  .profile2 {
+    grid-area: profile2;
+  }
+  
+  .profile3 {
+    grid-area: profile3;
+  }
+  
+  
+  .profile4 {
+    grid-area: profile4;
+  }
+  
+  footer {
+    height: 450px;
+    padding-top: 120px;
+    margin: 0;
+    padding: 0;
+    background-color: #404040;
+  }
+  
+  
+  .bg_avdelare {
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url(../images/div_pic_1.jpg);
+    height: 150px;
+    width: 100%;
+    background-position: bottom 190px right;
+    background-repeat: no-repeat;
+  }
+  
+  
+  .bg {
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url(../images/StartHead1_blur.png);
+    height: 265px;
+    width: 100%;
+    background-position: bottom 315px right;
+    background-repeat: no-repeat;
+  }
+  
+  .bg2 {
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url(../images/div-pic-3.jpg);
+    height: 150px;
+    width: 100%;
+    background-position: bottom 30px right;
+    background-repeat: no-repeat;
+  }
+  
+  
+  .bg1 {
+      background-size: cover;
+      background-attachment: fixed;
+      background-image: url(../images/div-pic-2.jpg);
+      height: 150px;
+      width: 100%;
+      background-position: -332px;
+      background-repeat: no-repeat;
+  }
+  
+  .bg3 {
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url(../images/div_pic_5.jpg);
+    height: 150px;
+    width: 100%;
+    background-position: bottom 200px right;
+    background-repeat: no-repeat;
+  }
+  
+  /* nav#mobile_navbar {
+    display: grid;
+    grid-template-columns: 25% 15% 40% 20%;
+    grid-template-rows: 100%;
+    grid-template-areas: ". logo pointerNav .";
+    height: 120px;
+    background-color: #3f7035;
+  } */
+  
+  nav#navbar {
+  
+  display: none;
+  
+  }
+  
+  nav#surf_navbar {
+  
+  display: none;
+  
+  }
+  
+  
+  .logo img {
+  
+  display: none;
+  
+  }
+  
+  .sticky {
+    background-color:#3F7035;
+    color:white;
+    position: fixed;
+    right:1px;
+    top: 0;
+    width: 100%;
+    z-index: 55555;
+  }
+  
+  
+  .sectionFooter span, label, legend {
+    color: white;
+    font-size: 15px;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .sectionLeftSpan1 {
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    grid-area: sectionLeftSpan1;
+  }
+  
+  .sectionLeftSpan2 {
+    margin: 0;
+    padding: 0;
+    grid-area: sectionLeftSpan2;
+  }
+  
+  .sectionLeftSpan3 {
+    margin: 0;
+    padding: 0;
+    grid-area: sectionLeftSpan3;
+    padding-bottom: 10px;
+  }
+  
+  .sectionLeftSpan4 {
+    margin: 0;
+    padding: 0;
+    grid-area: sectionLeftSpan4;
+    font-weight: bold;
+  }
+  
+  .sectionLeftSpan5 {
+    right: 20px;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    grid-area: sectionLeftSpan5;
+  }
+  
+  .sectionLeftSpan6 {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    grid-area: sectionLeftSpan6;
+  }
+  
+  .sectionLeftSpan7 {
+    margin: 0;
+    padding: 0;
+    grid-area: sectionLeftSpan7;
+  }
+  
+  .sectionMiddleSpan1 {
+    font-weight: bold;
+    text-align: center;
+    grid-area: sectionMiddleSpan1;
+  }
+  
+  .sectionMiddleHr {
+    height: 0px;
+    background-color: white;
+    grid-area: sectionMiddleHr;
+    width: 100px;
+  }
+  
+  .sectionMiddleSpan2 {
+    text-align: center;
+    grid-area: sectionMiddleSpan2;
+  }
+  
+  .sectionMiddleUl {
+    text-align: center;
+    align-self: center;
+    margin: 0;
+    padding: 0;
+    grid-area: sectionMiddleUl;
+  }
+  
+  .footerThirdColumn {
+    grid-row-gap: 10%;
+    grid-area: footerThirdColumn;
+    display: grid;
+    grid-template-columns: 18% 82%;
+    grid-template-rows: 25% 25% 25% 25%;
+    grid-template-areas:
+        "sectionRightSpan1 sectionRightSpan1"
+        "sectionRightSpan2 sectionRightInput1"
+        "sectionRightSpan3 sectionRightInput2"
+        ". sectionRightBtn";
+  }
+  
+  .sectionRightSpan1 {
+    text-align: center;
+    text-transform: uppercase;
+    grid-area: sectionRightSpan1;
+    font-weight: bold;
+  }
+  
+  .sectionRightSpan2 {
+    font-weight: bold;
+    grid-area: sectionRightSpan2;
+  }
+  
+  
+  .sectionRightInput1 {
+    grid-area: sectionRightInput1;
+  }
+  
+  .sectionRightSpan3 {
+    grid-area: sectionRightSpan3;
+    font-weight: bold;
+  }
+  
+  
+  .sectionRightInput2 {
+    grid-area: sectionRightInput2;
+  }
+  
+  .sectionMiddleUl li {
+    display: inline;
+  }
+  
+  .sectionMiddleSpan1 a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .sectionMiddleUl i {
+    color: white;
+  }
+  
+  .fa {
+    display: inline-block;
+    font-size: 14px;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .childToVisionText {
+    grid-area: childToVisionText;
+    text-align: left;
+  }
+  
+  .childToVisionH3 {
+    grid-area: childToVisionH3;
+  }
+  
+  #headeSection_bottom {
+    padding-bottom: 100px;
+    text-align:center;
+  }
+  
+  
+  }

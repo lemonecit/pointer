@@ -6,7 +6,10 @@
 
     <link href="https://fonts.googleapis.com/css?family=Oleo+Script&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oleo+Script&display=swap" rel="stylesheet">
+   
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/surf.css">
     <link rel="stylesheet" href="css/style.css">
         <meta name="description" content="Vi är ett företag som värnar om alla människors rätt att ha tillgång till en anpassad och fungerande kollektivtrafik.">
         <meta charset="utf-8">
@@ -456,21 +459,24 @@
 
 <script>
     window.onscroll = function() {myFunction1()};
-
+    let navbar2 = document.getElementById("surf_navbar");
     let navbar = document.getElementById("mobile_navbar");
     let navbar1 = document.getElementById("navbar");
     let sticky = navbar.offsetTop;
     let sticky1 = navbar1.offsetTop;
+    let sticky2 = navbar2.offsetTop;
 
     function myFunction1() {
       if (window.pageYOffset >= sticky) {
 
         console.log("hit!!!");
-        navbar1.classList.add("sticky1");
+        navbar2.classList.add("sticky");
+        navbar1.classList.add("sticky");
         navbar.classList.add("sticky");
       } else {
         navbar.classList.remove("sticky");
-        navbar1.classList.remove("sticky1");
+        navbar1.classList.remove("sticky");
+        navbar2.classList.remove("sticky");
       }
     }
 </script>
