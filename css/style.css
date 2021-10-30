@@ -79,16 +79,6 @@ html,body {
 
   /* common font, fontsize, color background */
 
-  h1,h2,h3 {
-
-    line-height: 1.5em;
-    margin: 0px;
-    padding: 0px;
-    color: #396430;
-  }
-
-
-
   h1{
   font-family: 'Oleo Script', cursive;
   }
@@ -97,7 +87,7 @@ html,body {
 
   h2 {
       font-family: 'Oleo Script', cursive;
-    font-size:30px;
+    font-size: calc(36px + (42 - 36) * ((100vw - 2100px) / (2100 - 900)));
   }
 
   h3 {

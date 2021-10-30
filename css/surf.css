@@ -20,7 +20,7 @@ Between 550px and 900 px
     h2 {
         margin-bottom: 20px;
         margin-top: 20px;
-        font-size: calc(45px + (50 - 45) * ((100vw - 900px) / (900 -300)));
+        font-size: calc(35px + (40 - 35) * ((100vw - 2100px) / (2100 - 900)));
     }
 
     .h1_header {
