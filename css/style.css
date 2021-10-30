@@ -1,3 +1,5 @@
+/* common css  */
+
 
 .h1_header {
   text-shadow: 2px 2px black;
@@ -60,7 +62,7 @@ html,body {
   font-family: helvetica;
   }
 
-
+/* For resolution between 2100px and 900px */
 
 @media screen and (max-width: 2100px) and (min-width:900px){
 
@@ -367,7 +369,7 @@ nav .pointerNav {
 
   .HeaderContent {
     width: 50%;
-    padding-top: 15px;
+    padding-top: 60px;
     display: grid;
     grid-area: huvudContent;
     grid-template-columns: 100%;
@@ -375,7 +377,7 @@ nav .pointerNav {
     grid-template-areas: "mainArticle";
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: 80px;
+    padding-bottom: 60px;
   
   }
   
@@ -961,6 +963,9 @@ nav .pointerNav {
     width: 100%;
     z-index: 55555;
   }
+
+
+  
     
 }
 

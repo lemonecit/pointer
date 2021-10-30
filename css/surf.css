@@ -727,7 +727,7 @@ Between 550px and 900 px
         text-align:center;
     }
 
-    .sticky {
+   .sticky2 {
         background-color:#3F7035;
         color:white;
         position: fixed;
@@ -736,7 +736,13 @@ Between 550px and 900 px
         width: 100%;
         z-index: 55555;
       }
-      
+
+
+      .sticky2 + .content {
+        padding-top: 400px;
+      }
+    
+   
   
     /* End of tablet resolution 900-550px */
   

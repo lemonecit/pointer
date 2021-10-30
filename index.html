@@ -360,9 +360,11 @@ Projekt 30/10/2021 -->
 <!-- Sticky - make topnav fixed when scroll up to top -->
 <script>
     window.onscroll = function() {myFunction1()};
+
     let navbar2 = document.getElementById("surf_navbar");
-    let navbar = document.getElementById("mobile_navbar");
-    let navbar1 = document.getElementById("navbar");
+    let navbar1 = document.getElementById("mobile_navbar");
+    let navbar = document.getElementById("navbar");
+    
     let sticky = navbar.offsetTop;
     let sticky1 = navbar1.offsetTop;
     let sticky2 = navbar2.offsetTop;
@@ -371,13 +373,13 @@ Projekt 30/10/2021 -->
       if (window.pageYOffset >= sticky) {
 
         console.log("hit!!!");
-        navbar2.classList.add("sticky");
-        navbar1.classList.add("sticky");
+        navbar2.classList.add("sticky2");
+        navbar1.classList.add("sticky1");
         navbar.classList.add("sticky");
       } else {
         navbar.classList.remove("sticky");
-        navbar1.classList.remove("sticky");
-        navbar2.classList.remove("sticky");
+        navbar1.classList.remove("sticky1");
+        navbar2.classList.remove("sticky2");
       }
     }
 </script>
